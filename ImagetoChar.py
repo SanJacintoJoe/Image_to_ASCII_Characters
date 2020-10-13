@@ -24,9 +24,9 @@ for i in range(0, len(array1), 5):
     start2 = 0
     Output = ''
     for x in range(0, len(array1[i]), 5):
-        chuck5x5 = array1[start:i+1, start2:x+1]
-        chuck5x5 = chuck5x5.flatten()
-        if len(chuck5x5) != 0 and sum(chuck5x5) >= 255:
+        chunk5x5 = array1[start:i+1, start2:x+1]
+        chunk5x5 = chunk5x5.flatten()
+        if len(chunk5x5) != 0 and sum(chunk5x5) >= 255:
             Output += str(outline)
         else:
             Output += str(not_outline)
